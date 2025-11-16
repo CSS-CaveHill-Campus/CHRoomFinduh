@@ -34,6 +34,9 @@ Optional parameters include:
 - room: A specific room to check the schedule for. Will default to `all`. Refer to `/rooms` for a list of all rooms.
 - prefix: 4 character Course prefix (Example: PSCY, COMP, MATH) to filter by.
 
+> [!NOTE]
+> If `faculty` and `prefix` are both provided, the `prefix` will take precedence.
+
 ### Free
 
 The `/free` endpoint will return a list of rooms that are free based on the following query parameters.
@@ -164,8 +167,8 @@ The `/free` endpoint, will return a response matching the following format:
     "data": [
         {
             "room": "The name of the available room",
-            "from": "The hour in which the room becomes available",
-            "to": "The hour in which the room is no longer available",
+            "available_from": "The hour in which the room becomes available",
+            "available_to": "The hour in which the room is no longer available",
         }
     ]
 }

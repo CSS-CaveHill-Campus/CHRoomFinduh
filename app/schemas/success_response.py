@@ -6,13 +6,12 @@ from pydantic import BaseModel
 from app.schemas.enums import StatusEnum
 from app.models.free_room import FreeRoom
 from app.models.prefix import Prefix
-from app.models.room import Room
 from app.models.schedule import Schedule
 
 
 class SuccessResponse(BaseModel):
     status: StatusEnum = StatusEnum.SUCCESS
-    data: list
+    data: list[Any]
 
 
 class ScheduleSuccessResponse(SuccessResponse):
@@ -24,7 +23,7 @@ class FreeRoomSuccessResponse(SuccessResponse):
 
 
 class RoomSuccessResponse(SuccessResponse):
-    data: list[Room]
+    data: list[str]
 
 
 class PrefixSuccessResponse(SuccessResponse):

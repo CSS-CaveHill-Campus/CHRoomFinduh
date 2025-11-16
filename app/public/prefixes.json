@@ -1,0 +1,152 @@
+[
+    {
+        "faculty": "FCCPA",
+        "prefix": "CLTR",
+        "desc": "Cultural Studies"
+    },
+    {
+        "faculty": "FCCPA",
+        "prefix": "DANC",
+        "desc": "Dance"
+    },
+    {
+        "faculty": "FCCPA",
+        "prefix": "MUSC",
+        "desc": "Music"
+    },
+    {
+        "faculty": "FCCPA",
+        "prefix": "THEA",
+        "desc": "Theatre Arts"
+    },
+    {
+        "faculty": "FHE",
+        "prefix": "FOUN",
+        "desc": "Foundation courses"
+    },
+    {
+        "faculty": "FHE",
+        "prefix": "HIST",
+        "desc": "History"
+    },
+    {
+        "faculty": "FHE",
+        "prefix": "LITS",
+        "desc": "Literature"
+    },
+    {
+        "faculty": "FHE",
+        "prefix": "LING",
+        "desc": "Linguistics"
+    },
+    {
+        "faculty": "FHE",
+        "prefix": "EDFA",
+        "desc": "Education Fine Arts"
+    },
+    {
+        "faculty": "FHE",
+        "prefix": "SPAN",
+        "desc": "Spanish"
+    },
+    {
+        "faculty": "FHE",
+        "prefix": "PHIL",
+        "desc": "Philosophy"
+    },
+    {
+        "faculty": "LAW",
+        "prefix": "LAW",
+        "desc": "Law courses"
+    },
+    {
+        "faculty": "FMS",
+        "prefix": "MEDS",
+        "desc": "Medical Sciences"
+    },
+    {
+        "faculty": "FMS",
+        "prefix": "PHAR",
+        "desc": "Pharmacy"
+    },
+    {
+        "faculty": "FMS",
+        "prefix": "ANAT",
+        "desc": "Anatomy"
+    },
+    {
+        "faculty": "FMS",
+        "prefix": "PHYS",
+        "desc": "Physiology"
+    },
+    {
+        "faculty": "FST",
+        "prefix": "BIOL",
+        "desc": "Biology"
+    },
+    {
+        "faculty": "FST",
+        "prefix": "CHEM",
+        "desc": "Chemistry"
+    },
+    {
+        "faculty": "FST",
+        "prefix": "PHYS",
+        "desc": "Physics"
+    },
+    {
+        "faculty": "FST",
+        "prefix": "COMP",
+        "desc": "Computer Science"
+    },
+    {
+        "faculty": "FST",
+        "prefix": "MATH",
+        "desc": "Mathematics"
+    },
+    {
+        "faculty": "FST",
+        "prefix": "STAT",
+        "desc": "Statistics"
+    },
+    {
+        "faculty": "FSS",
+        "prefix": "ECON",
+        "desc": "Economics"
+    },
+    {
+        "faculty": "FSS",
+        "prefix": "MGMT",
+        "desc": "Management"
+    },
+    {
+        "faculty": "FSS",
+        "prefix": "PSYC",
+        "desc": "Psychology"
+    },
+    {
+        "faculty": "FSS",
+        "prefix": "GOVT",
+        "desc": "Government/Political Science"
+    },
+    {
+        "faculty": "FSS",
+        "prefix": "SOCI",
+        "desc": "Sociology"
+    },
+    {
+        "faculty": "FSS",
+        "prefix": "ACCT",
+        "desc": "Accounting"
+    },
+    {
+        "faculty": "FSS",
+        "prefix": "MKTG",
+        "desc": "Marketing"
+    },
+    {
+        "faculty": "SPORT",
+        "prefix": "SPOR",
+        "desc": "Sport"
+    }
+]
