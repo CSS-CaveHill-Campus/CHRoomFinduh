@@ -9,12 +9,12 @@ class StatusEnum(str, Enum):
 
 
 class FacultyEnum(str, Enum):
-    FCCPA = "fccpa"
-    FHE = "fhe"
-    LAW = "law"
-    FMS = "fms"
-    FST = "fst"
-    FSS = "fss"
+    FCCPA = "FCCPA"
+    FHE = "FHE"
+    LAW = "LAW"
+    FMS = "FMS"
+    FST = "FST"
+    FSS = "FSS"
 
 
 class DayEnum(str, Enum):
@@ -26,8 +26,3 @@ class DayEnum(str, Enum):
     SAT = "sat"
     SUN = "sun"
     ALL = "all"
-
-
-class ClassTypeEnum(str, Enum):
-    LECTURE = "l"
-    TUTORIAL = "t"

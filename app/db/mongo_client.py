@@ -10,9 +10,7 @@ from motor.motor_asyncio import (
 )
 
 from app.schemas.enums import DayEnum, FacultyEnum
-from app.models import RoomAvailability, Schedule
-from app.models.room import Room
-from models.prefix import Prefix
+from app.models import RoomAvailability, Schedule, Room, Prefix
 
 
 class MongoORM:

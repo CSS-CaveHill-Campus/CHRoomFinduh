@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from app.schemas.enums import ClassTypeEnum, DayEnum
+from app.schemas.enums import DayEnum
 
 
 class Schedule(BaseModel):
@@ -8,7 +8,7 @@ class Schedule(BaseModel):
     day: DayEnum
     start_time: int
     end_time: int
-    class_type: ClassTypeEnum
+    class_type: str
     start_date: str  # mm/dd/yyyy
     end_date: str  # mm/dd/yyyy
     room: str

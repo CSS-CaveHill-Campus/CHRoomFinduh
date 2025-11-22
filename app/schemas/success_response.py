@@ -4,14 +4,14 @@ from typing import Any
 from pydantic import BaseModel
 
 from app.schemas.enums import StatusEnum
-from app.models.free_room import FreeRoom
+from app.models import RoomAvailability
 from app.models.prefix import Prefix
 from app.models.schedule import Schedule
 
 
 class SuccessResponse(BaseModel):
     status: StatusEnum = StatusEnum.SUCCESS
-    data: list[Any]
+    data: list[Any]  # pyright: ignore[reportExplicitAny]
 
 
 class ScheduleSuccessResponse(SuccessResponse):
@@ -19,7 +19,7 @@ class ScheduleSuccessResponse(SuccessResponse):
 
 
 class FreeRoomSuccessResponse(SuccessResponse):
-    data: list[FreeRoom]
+    data: list[RoomAvailability]
 
 
 class RoomSuccessResponse(SuccessResponse):
