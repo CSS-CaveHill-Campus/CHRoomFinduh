@@ -174,7 +174,7 @@ The `/free` endpoint, will return a response matching the following format:
         }
     ]
 }
-    ```
+```
 
 The `/rooms` endpoint will return an array of room names as follows:
 
