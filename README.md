@@ -60,7 +60,7 @@ Similarly, if we wanted to see when ML4 would be available on Wednesdays, we wou
 ### Rooms
 
 The `/rooms` endpoint, will return an array of *all* rooms, for which schedules exist.
-This is purely for reference purposes, when calling the `/schedule` route.
+This is purely for reference purposes, when calling the `/schedule` or `/free` route.
 The information provided here will also be accessible within the `rooms.json` file.
 
 ### Prefixes
@@ -167,6 +167,8 @@ The `/free` endpoint, will return a response matching the following format:
     "data": [
         {
             "room": "The name of the available room",
+            "day": "The day the room is available",
+            "building": "The name of the building the room is in",
             "available_from": "The hour in which the room becomes available",
             "available_to": "The hour in which the room is no longer available",
         }
