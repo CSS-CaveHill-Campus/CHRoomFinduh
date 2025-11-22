@@ -16,10 +16,11 @@ if not success:
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     mongo_url: str | None = getenv("MONGO_URL")
-    if not mongo_url:
-        raise RuntimeError("Mongo URL not set")
+    db_name: str | None = getenv("DB_NAME")
+    if not mongo_url or not db_name:
+        raise RuntimeError("Mongo URL or DB name not set")
 
-    app.state.db = MongoORM(mongo_url)
+    app.state.db = MongoORM(mongo_url, db_name)
 
     yield
 
