@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, status
-from fastapi.responses import RedirectResponse
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
 from app.routers import v1_router
 from dotenv import load_dotenv
 from os import getenv
@@ -28,11 +29,12 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="UWI CH RoomFinduh API", lifespan=lifespan)
+templates = Jinja2Templates(directory="app/templates")
 
 
 app.include_router(router=v1_router)
 
 
-@app.get("/")
-async def index():
-    return RedirectResponse(url="/docs", status_code=status.HTTP_303_SEE_OTHER)
+@app.get("/", response_class=HTMLResponse)
+async def index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
