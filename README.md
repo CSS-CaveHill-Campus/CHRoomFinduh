@@ -90,6 +90,7 @@ enum Faculty {
     fst, // Faculty of Science and Technology
     fss, // Faculty of Social Sciences
 }
+```
 
 `limit` will be a positive integer. Setting limit to 0 will return ALL results.
 
