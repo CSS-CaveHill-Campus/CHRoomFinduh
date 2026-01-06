@@ -16,6 +16,9 @@ There are four endpoints listed as follows:
 
 Note: Each endpoint will only have access to data for the current semester.
 
+The base URL for the service is: https://chroomfinduh.onrender.com
+This is running on the free tier of Render, so there is high chance that first requests may take upwards of 1 minute before a response is returned.
+
 > [!NOTE]
 > While I may refer to them as `/free` and `/schedule`, each will have the prefix `/api/v1`.
 > As such, when I say `/schedule`, I am indeed referring to `/api/v1/schedule`. Ty.
